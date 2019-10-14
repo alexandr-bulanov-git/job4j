@@ -15,13 +15,12 @@ public class TriangleTest {
     }
 
     /*
-     * Triangle does not exist
+     * Triangle Does not exists
      */
     @Test
     public void whenDoesNotExist() {
-        boolean result = Triangle.DoesNotExist(5.0, 2.0, 1.0);
-        assertThat(result, is(true));
+        boolean result = Triangle.exist(5.0, 2.0, 8.0);
+        assertThat(result, is(false));
     }
-
 }
 
