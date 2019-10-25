@@ -1,4 +1,4 @@
-package ru.job4j.hello_world;
+package ru.job4j.helloworld;
 
 public class Main {
 
