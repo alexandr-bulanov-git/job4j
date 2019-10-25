@@ -1,4 +1,4 @@
-package ru.job4j.sqArea;
+package ru.job4j.sqarea;
 
 public class SqArea {
     public static int square(int p, int k) {

@@ -1,4 +1,4 @@
-package ru.job4j.sqArea;
+package ru.job4j.sqarea;
 
 import org.junit.Test;
 import static org.hamcrest.Matchers.is;
