@@ -1,5 +1,11 @@
 package ru.job4j.oop;
-
+/**
+ * Вызов метода с аргументами.
+ *
+ * @author Alexandr Bulanov
+ * @version $Id$
+ * @since 31.10.2019
+ */
 public class Jukebox {
     public static void main(String[] args) {
         Jukebox view = new Jukebox();
