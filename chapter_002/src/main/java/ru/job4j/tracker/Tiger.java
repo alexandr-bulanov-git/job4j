@@ -5,4 +5,8 @@ public class Tiger extends Animal {
        super(name);
        System.out.println("Tiger");
     }
+
+    public Tiger() {
+
+    }
 }
