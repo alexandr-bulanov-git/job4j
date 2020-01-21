@@ -1,5 +1,22 @@
 package ru.job4j.inheritance;
 
+/**
+ * Переопределение.
+ *
+ * @author Alexandr Bulanov
+ * @version $Id$
+ * @since 31.10.2019
+ *
+ * Задание.
+ * 1. Создайте класс JSONReport. Он должен наследоваться от TextReport.
+ * 2. Переопределите методы generate. Этот метод должен вернуть шаблон в формате JSON.
+ * Пример шаблона
+ *  {
+ *    name : name,
+ *    body : body
+ * }
+ */
+
 public class ReportUsage {
     public static void main(String[] args) {
         //TextReport report = new TextReport();
