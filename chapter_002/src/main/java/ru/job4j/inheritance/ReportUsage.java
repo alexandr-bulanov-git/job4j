@@ -5,7 +5,7 @@ package ru.job4j.inheritance;
  *
  * @author Alexandr Bulanov
  * @version $Id$
- * @since 31.10.2019
+ * @since 21.01.2020
  *
  * Задание.
  * 1. Создайте класс JSONReport. Он должен наследоваться от TextReport.
