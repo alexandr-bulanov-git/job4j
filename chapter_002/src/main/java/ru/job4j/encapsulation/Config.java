@@ -21,7 +21,8 @@ public class Config {
     private String name;
     //Воторое нарушение
     private int position;
-    public String[] properties;
+    //Нарушение
+    private String[] properties;
 
     public Config(String name) {
         this.name = name;
