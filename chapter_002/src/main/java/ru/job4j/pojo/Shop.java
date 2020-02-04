@@ -1,8 +1,8 @@
-package ru.job4j.pojo;
+﻿package ru.job4j.pojo;
 /**
    Удаление моделей из массива - выполнение задания.
    @author Alexandr Bulanov;
-   @since –  29.01.2019;
+   @since –  04.02.2019;
    @version – $ID$
 
    Задание.
