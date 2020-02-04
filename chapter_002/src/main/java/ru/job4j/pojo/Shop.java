@@ -1,8 +1,9 @@
-﻿package ru.job4j.pojo;
+package ru.job4j.pojo;
+
 /**
    Удаление моделей из массива - выполнение задания.
-   @author Alexandr Bulanov;
-   @since –  04.02.2019;
+   @author Alexandr Bulanov
+   @since –  04.02.2019
    @version – $ID$
 
    Задание.
@@ -13,42 +14,47 @@
    products[index] = products[index + 1];
    После цикла нужно поставить на последнее место в массиве null, чтобы последний и предпоследний элементы не дублировались
    products[products.lenght - 1] = null;
-   Добавьте демонстрацию работы примера в метод main.
  */
+
 public class Shop {
-    Product[] delete(Product[] products, int index) {
-        System.out.println();
-        System.out.println("Удаляем значение из ячейки с индексом " + index);
+    public static Product[] delete(Product[] products, int index) {
         products[index] = null;
-        for (int i = index; i < products.length - 1; i++) {
-            Product product = products[i + 1];
-            //проверяем, что объект не равен null. тк у нас массив не заполнен целиком.
-            if (product != null) {
-                products[i] = products[i + 1];
+        for (int i = index + 1; i < products.length; i++) {
+            if (products[i] != null) {
+                products[i - 1] = products[i];
             } else {
-                System.out.println("null");
-            }
-        }
-        System.out.println("Массив после удаления:");
-        for (int i = 0; i < products.length; i++) {
-            Product product = products[i];
-            if (product != null) {
-                System.out.println(product.getName());
-            } else {
-                System.out.println("null");
+                products[i-1] = null;
+                break;
             }
         }
         return products;
     }
+
     public static void main(String[] args) {
-        Product[] products = new Product[5];
+        Product products[] = new Product[5];
         products[0] = new Product("Milk", 10);
-        products[1] = new Product("Bread", 4);
-        products[2] = new Product("Egg", 19);
-        for (Product product : products) {
+        products[1] = new Product("Butter", 12);
+        products[2] = new Product("Bread", 4);
+        products[3] = new Product("Egg", 19);
+        products[4] = null;
+
+        for (int i = 0; i < products.length; i++) {
+            Product product = products[i];
             //проверяем, что объект не равен null. тк у нас массив не заполнен целиком.
             if (product != null) {
                 System.out.println(product.getName());
+            } else {
+                System.out.println("null");
+            }
+        }
+
+        System.out.println("\nDelete index 1\n");
+
+        delete(products, 1);
+
+        for (int i = 0; i < products.length; i++) {
+            if (products[i] != null) {
+                System.out.println(products[i].getName());
             } else {
                 System.out.println("null");
             }
